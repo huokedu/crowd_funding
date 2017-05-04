@@ -1,0 +1,36 @@
+{
+  "pageNo": 0,
+  "pageSize": 2,
+  "list": [
+    {
+      "id": "1",
+      "raiseName": "华为P10旗舰店128G",
+      "raiseIcon": "../src/images/demo1.jpg",
+      "startDate": "78973933",
+      "endDate": "78973933",
+      "outTime": "20：10",
+      "currentPeriod": "一",
+      "currentNum": 1,
+      "totalLedou": 5000,
+      "productPrice": 20,
+      "remainingNum": 20,
+      "currentStatus": 0,
+      "progress": 24
+    },
+    {
+      "id": "2",
+      "raiseName": "华为P10旗舰店128G",
+      "raiseIcon": "../src/images/demo1.jpg",
+      "startDate": "78973933",
+      "endDate": "78973933",
+      "outTime": "20：10",
+      "currentPeriod":"二",
+      "currentNum": 1,
+      "totalLedou": 5000,
+      "productPrice": 20,
+      "remainingNum": 20,
+      "currentStatus": 1,
+      "progress": 24
+    }
+  ]
+}
