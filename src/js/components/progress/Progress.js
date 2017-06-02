@@ -1,10 +1,9 @@
-var React=require("react");
+import React from 'react';
 
 export default class Progress extends React.Component{
 	constructor(){
 	      super();
 	      this.state = {
-
 			total:"5000",
 			leftNo:"1000"
 		};
@@ -13,7 +12,7 @@ export default class Progress extends React.Component{
     render(){
     	const styleComponentHeader = {
 			percent: {
-				width: "80%"
+				width: this.props.progress+"%"
 			},
 			//还可以定义其他的样式
 		};

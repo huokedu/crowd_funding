@@ -1,4 +1,4 @@
-var React=require("react");
+import React from 'react';
 import Content from "./Content";
 import List from "./List";
 export default class Tab extends React.Component{

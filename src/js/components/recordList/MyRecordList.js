@@ -1,4 +1,4 @@
-var React=require("react");
+import React from 'react';
 import Progress from "../progress/Progress";
 import WinnerUp from "../up/winnerUp";
 

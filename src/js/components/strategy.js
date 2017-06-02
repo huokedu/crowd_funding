@@ -1,4 +1,4 @@
-var React=require("react");
+import React from 'react';
 import { Router, Route, Link, browserHistory } from 'react-router';
 import Header from "./header";
 export default class Strategy extends React.Component{

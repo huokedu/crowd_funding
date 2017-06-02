@@ -1,4 +1,4 @@
-var React=require("react");
+import React from 'react';
 import {Router, Route, Link, browserHistory} from 'react-router'
 
 export default class ComFooter extends React.Component{

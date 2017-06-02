@@ -1,4 +1,4 @@
-var React=require("react");
+import React from 'react';
 import WinnerUp from "../up/winnerUp";
 export default class RecordList extends React.Component{
 

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Main from "./components/main";
+//import Main from "./loadMoreDemo/demo";
 import {Router,Route,hashHistory} from 'react-router';
 
 export default class Root extends React.Component{

@@ -1,4 +1,4 @@
-var React=require("react");
+import React from 'react';
 import { raiseList } from "../common/api";
 import { Router, Route, Link, browserHistory } from 'react-router';
 import Tloader from 'react-touch-loader';
@@ -6,11 +6,13 @@ import Tloader from 'react-touch-loader';
 import Header from "./header";
 import Footer from "./footer";
 import Tab from "./tab/Tab";
+
 export default class IndexList extends React.Component{
 	constructor() {
 		super();
 		this.state = {
-			news: ''
+			raiseList: '',
+			title:"众筹夺宝"
 		};
 	};
 	//在完成首次渲染之前调用，此时仍可以修改组件的state
@@ -36,7 +38,7 @@ export default class IndexList extends React.Component{
 				if(responseText){
 					console.log("接口请求成功！",responseText);
 					this.setState({
-						news:responseText.list
+						raiseList:responseText.raiseList
 					});
 					this.getData();
 				}
@@ -55,11 +57,11 @@ export default class IndexList extends React.Component{
 		this.setState({newsInfo: newsInfo});
 	};*/
 	render(){
-		const {news} = this.state;
+		const {raiseList} = this.state;
 		//key={index}放在li标签里面回有警告
-		const newsList = news.length
-			? news.map((newsItem, index) => (
-			 <Link to={{ pathname: '/details/1', query: {urls: newsItem.raiseIcon,title: newsItem.raiseName} }} key={index} >
+		const newsList = raiseList.length
+			? raiseList.map((newsItem, index) => (
+			 <Link to={{ pathname: '/details/1', query: {urls: newsItem.raiseIcon,title: newsItem.raiseName,progress:newsItem.progress} }} key={index} >
 				<div class="wrap">
 					<div class="goods">
 						<a class="good-a" href="javascript:void(0)">
@@ -89,7 +91,7 @@ export default class IndexList extends React.Component{
 			: <div class="none-news">没有加载到任何新闻</div>;
 		return( 
 			<div class="flex">
-			<Header/>
+			<Header title={this.state.title}/>
 				<main class="body">
 					<div class="good-list">
 	   					{newsList}

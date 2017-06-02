@@ -1,4 +1,4 @@
-var React = require("react");
+import React from 'react';
 import { Router, Route, hashHistory } from 'react-router';
 import Strategy from "./strategy";
 import Records from "./records";
